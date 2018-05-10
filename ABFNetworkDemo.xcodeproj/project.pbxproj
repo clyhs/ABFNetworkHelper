@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721A32BC20A484B900506E24 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 721A32BB20A484B900506E24 /* resource.bundle */; };
+		721A32BE20A489AE00506E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721A32BD20A489AE00506E24 /* Assets.xcassets */; };
 		723AC1B220A1DD5400B6107D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AC1B120A1DD5400B6107D /* AppDelegate.m */; };
 		723AC1B520A1DD5400B6107D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AC1B420A1DD5400B6107D /* ViewController.m */; };
 		723AC1B820A1DD5400B6107D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723AC1B620A1DD5400B6107D /* Main.storyboard */; };
-		723AC1BA20A1DD5D00B6107D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723AC1B920A1DD5D00B6107D /* Assets.xcassets */; };
 		723AC1BD20A1DD5D00B6107D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723AC1BB20A1DD5D00B6107D /* LaunchScreen.storyboard */; };
 		723AC1C020A1DD5D00B6107D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AC1BF20A1DD5D00B6107D /* main.m */; };
 		723AC1CA20A1DD5D00B6107D /* ABFNetworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AC1C920A1DD5D00B6107D /* ABFNetworkDemoTests.m */; };
@@ -42,13 +43,14 @@
 		3CDDE13B4F020D59853EB3A8 /* libPods-ABFNetworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABFNetworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		408FB1EFAB4A9D8D12809DA5 /* Pods-ABFNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABFNetworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABFNetworkDemo/Pods-ABFNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4C9E6BFCE9F323D2A1794C9F /* Pods-ABFNetworkDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABFNetworkDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABFNetworkDemoTests/Pods-ABFNetworkDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		721A32BB20A484B900506E24 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		721A32BD20A489AE00506E24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723AC1AD20A1DD5400B6107D /* ABFNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABFNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723AC1B020A1DD5400B6107D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		723AC1B120A1DD5400B6107D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		723AC1B320A1DD5400B6107D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		723AC1B420A1DD5400B6107D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		723AC1B720A1DD5400B6107D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		723AC1B920A1DD5D00B6107D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723AC1BC20A1DD5D00B6107D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		723AC1BE20A1DD5D00B6107D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		723AC1BF20A1DD5D00B6107D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,13 +143,14 @@
 		723AC1AF20A1DD5400B6107D /* ABFNetworkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				721A32BB20A484B900506E24 /* resource.bundle */,
 				723AC1B020A1DD5400B6107D /* AppDelegate.h */,
 				723AC1B120A1DD5400B6107D /* AppDelegate.m */,
 				723AC1B320A1DD5400B6107D /* ViewController.h */,
 				723AC1B420A1DD5400B6107D /* ViewController.m */,
 				723AC1B620A1DD5400B6107D /* Main.storyboard */,
-				723AC1B920A1DD5D00B6107D /* Assets.xcassets */,
 				723AC1BB20A1DD5D00B6107D /* LaunchScreen.storyboard */,
+				721A32BD20A489AE00506E24 /* Assets.xcassets */,
 				723AC1BE20A1DD5D00B6107D /* Info.plist */,
 				723AC1BF20A1DD5D00B6107D /* main.m */,
 			);
@@ -279,8 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				723AC1BD20A1DD5D00B6107D /* LaunchScreen.storyboard in Resources */,
-				723AC1BA20A1DD5D00B6107D /* Assets.xcassets in Resources */,
 				723AC1B820A1DD5400B6107D /* Main.storyboard in Resources */,
+				721A32BE20A489AE00506E24 /* Assets.xcassets in Resources */,
+				721A32BC20A484B900506E24 /* resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +541,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BGHQWG8NV;
 				INFOPLIST_FILE = ABFNetworkDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clyhs.ABFNetworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +559,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BGHQWG8NV;
 				INFOPLIST_FILE = ABFNetworkDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clyhs.ABFNetworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,7 +577,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BGHQWG8NV;
 				INFOPLIST_FILE = ABFNetworkDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clyhs.ABFNetworkDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,7 +597,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BGHQWG8NV;
 				INFOPLIST_FILE = ABFNetworkDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clyhs.ABFNetworkDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,7 +616,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BGHQWG8NV;
 				INFOPLIST_FILE = ABFNetworkDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clyhs.ABFNetworkDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,7 +635,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BGHQWG8NV;
 				INFOPLIST_FILE = ABFNetworkDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clyhs.ABFNetworkDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

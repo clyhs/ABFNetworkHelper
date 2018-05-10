@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     //[self get];
     //[self post];
-    [self download];
+    [self upload];
 }
 
 
@@ -105,17 +105,20 @@
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.requestSerializer.timeoutInterval = 30.f;
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/*", nil];
-    NSString *url=@"";
+    NSString *url=@"#";
     NSMutableDictionary *params = [NSMutableDictionary new];
-    [params setObject:@"10000" forKey:@"user_id"];
-    [params setObject:@"1" forKey:@"type_id"];
+    [params setObject:[NSString stringWithFormat:@"%d",10000] forKey:@"user_id"];
+    [params setObject:[NSString stringWithFormat:@"%d",1] forKey:@"type_id"];
     
     NSString *context =@"test";
     [params setObject:context forKey:@"context"];
     [sessionManager POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        UIImage *image = [UIImage imageNamed:@""];
+        NSString *imagePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:[NSString stringWithFormat:@"resource.bundle/%@", @"2.png"]];
+        
+        UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
         NSData *imageData = UIImagePNGRepresentation(image);
-        [formData appendPartWithFileData:imageData name:[NSString stringWithFormat:@"file_%d",1] fileName:@"123" mimeType:@"image/png"];
+        NSLog(@"%@",imageData);
+        [formData appendPartWithFileData:imageData name:[NSString stringWithFormat:@"file_%d",1] fileName:@"123.png" mimeType:@"image/png"];
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         NSLog(@"%lf",1.0*uploadProgress.completedUnitCount/uploadProgress.totalUnitCount);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
